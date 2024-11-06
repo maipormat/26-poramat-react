@@ -13,8 +13,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/owner" element={<Owner />} />
-        <Route path="/homeuser" element={<HomeUser />} /> {/* เส้นทางไปยัง HomeUser */}
-        <Route path="/homeadmin" element={<HomeAdmin />} /> {/* เส้นทางไปยัง HomeAdmin */}
+        <Route path="/homeuser" element={<HomeUser />} /> 
+        <Route path="/homeadmin" element={<HomeAdmin />} />
       </Routes>
     </>
   );

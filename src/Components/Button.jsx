@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-
+ {/*ทำฟังชั่นปุ่มไว้ใช้สำหรับลิ้งไปยังหน้าที่มีตาราง*/}
 function Button() {
   return (
     <div className="flex space-x-8 mt-8">

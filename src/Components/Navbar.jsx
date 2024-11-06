@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+ {/* ทำลิ้งไปหน้าโฮมและowner */}
 function Navbar() {
   return (
     <div className="flex justify-end bg-slate-500 py-5">
