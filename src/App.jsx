@@ -1,17 +1,21 @@
-import reactLogo from './assets/react.svg'
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import Owner from "./Components/Owner"
+import HomeUser from "./Components/HomeUser";
+import HomeAdmin from "./Components/HomeAdmin";
+import { Routes, Route } from "react-router-dom";
 
-import './App.css'
 
-function App() {
- 
-
+export default function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-400">
-      Hello world!
-    </h1>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/owner" element={<Owner />} />
+        <Route path="/homeuser" element={<HomeUser />} /> {/* เส้นทางไปยัง HomeUser */}
+        <Route path="/homeadmin" element={<HomeAdmin />} /> {/* เส้นทางไปยัง HomeAdmin */}
+      </Routes>
     </>
-  )
+  );
 }
-
-export default App
